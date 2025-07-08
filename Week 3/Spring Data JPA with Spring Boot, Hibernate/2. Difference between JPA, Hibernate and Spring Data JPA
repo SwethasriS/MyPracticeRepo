@@ -1,0 +1,31 @@
+1. Java Persistence API (JPA):
+    1. A specification (interface) for managing relational data in Java
+    2. Defines how Java objects should be persisted in a database
+    3. Does not provide any implementation
+    4. Defined through persistence.xml or annotations
+    5. Requires manual coding for queries and transactions
+    6. Query language is Java Persistence Query Language
+    7. No built-in repository abstraction
+    8. Limited to specification standards
+
+2. Hibernate:
+    1. A popular implementation of JPA
+    2. An ORM tool (Object Relational Mapping)
+    3. Handles converting between Java objects and database tables
+    4. Configured via hibernate.cfg.xml or annotations
+    5. Provides additional features like HQL, Criteria API
+    6. Query language is Hibernate Query Language, JPQL and native SQL
+    7. No repository abstraction, uses Session or EntityManager
+    8. Highly extensible with custom mappings, interceptors
+
+3. Spring Data JPA:
+    1. A Spring module built on top of JPA
+    2. Provides abstraction over JPA
+    3. No need to write boilerplate code like opening sessions or managing transactions
+    4. Configured via Spring annotations or Java config
+    5. Simplifies repository creation with minimal code
+    6. Query language is JPQL, method name-based queries, custom queries
+    7. Provides repository interfaces
+    8. Extends JPA with Spring-specific features
+
+
